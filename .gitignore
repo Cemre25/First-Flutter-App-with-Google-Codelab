@@ -1,0 +1,28 @@
+# Im Terminal im Projektordner:
+git rm -r --cached .
+```
+
+Dann eine `.gitignore` Datei erstellen mit diesem Inhalt:
+```
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+
+# Android
+**/android/app/src/main/java/io/flutter/plugins/
+**/android/gradle-wrapper.jar
+**/android/.gradle
+
+# iOS
+**/ios/Flutter/Generated.xcconfig
+**/ios/Flutter/ephemeral/
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# macOS
+**/macos/Flutter/ephemeral/
+
+# Windows
+**/windows/flutter/ephemeral/
